@@ -7,7 +7,7 @@
 
   <title>Notifications</title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
   <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
   <link rel="stylesheet" href="styles/index.css">
@@ -20,7 +20,7 @@
   </header>
 
   <main>
-    <p>Press button below to subscribe to push notifications</p>
+    <p>Press button below to subscribe</p>
     <p>
       <button disabled class="js-push-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
         Enable Push Messaging
@@ -38,7 +38,19 @@
     </section>
   </main>
 
-  <script src="scripts/main.js"></script>
+  <!--<script src="scripts/main.js"></script>-->
+  <script type="text/javascript">
+    (function(p,u,s,h){
+        p._pcq=p._pcq||[];
+        p._pcq.push(['_currentTime',Date.now()]);
+        s=u.createElement('script');
+        s.type='text/javascript';
+        s.async=true;
+        s.src='https://cdn.pushcrew.com/js/e55cd236d48216d0de84fc952203e244.js';
+        h=u.getElementsByTagName('script')[0];
+        h.parentNode.insertBefore(s,h);
+    })(window,document);
+</script>
 
   <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 </body>
